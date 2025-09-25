@@ -20,18 +20,21 @@
 
     <p class="subtext">Tap a category below to find<br>places around the venue</p>
 
-    <div class="button-grid">
-      <button onclick="loadCategory('restaurant')">Restaurants</button>
-      <button onclick="loadCategory('lodging')">Hotels</button>
-      <button onclick="loadCategory('store')">Retail Stores</button>
-      <button onclick="loadCategory('bar')">Bars</button>
-      <button onclick="loadCategory('cafe')">Coffee Shops</button>
-      <button onclick="loadCategory('tourist_attraction')">Attractions</button>
-      <button onclick="loadCategory('transit_station')">Public Transit</button>
-      <button onclick="loadCategory('pharmacy')">Pharmacies</button>
-      <button onclick="loadCategory('gas_station')">Gas Stations</button>
-      <button onclick="loadCategory('supermarket')">Grocery Stores</button>
-    </div>
+<!-- Grid Buttons (centered in flex container) -->
+<div style="display: flex; justify-content: center;">
+  <div class="button-grid" style="max-width: 700px;">
+    <button onclick="loadCategory('restaurant')">Restaurants</button>
+    <button onclick="loadCategory('lodging')">Hotels</button>
+    <button onclick="loadCategory('store')">Retail Stores</button>
+    <button onclick="loadCategory('bar')">Bars</button>
+    <button onclick="loadCategory('cafe')">Coffee Shops</button>
+    <button onclick="loadCategory('tourist_attraction')">Attractions</button>
+    <button onclick="loadCategory('transit_station')">Public Transit</button>
+    <button onclick="loadCategory('pharmacy')">Pharmacies</button>
+    <button onclick="loadCategory('gas_station')">Gas Stations</button>
+    <button onclick="loadCategory('supermarket')">Grocery Stores</button>
+  </div>
+</div>
 
     <select id="restaurant-filters" class="dropdown" style="display:none;" onchange="triggerFilteredSearch()"></select>
     <div id="results"></div>
